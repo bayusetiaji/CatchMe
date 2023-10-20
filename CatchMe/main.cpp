@@ -25,6 +25,8 @@ int main()
 	system("title Catch Me If You Can");
 	
 	// koordinat hero
+	// short adalah kependekan dari 'signed short integer'
+	// yaitu tipe bilangan bulat positif dengan rentang yang kecil
 	short heroX = 30;
 	short heroY = 12;
 
@@ -114,6 +116,11 @@ int main()
 		// tetap berjalan tanpa tertahan oleh penekanan tombol
 		if (_kbhit())
 		{
+			// baca tombol yang ditekan
+			// panah atas: 72
+			// panah kiri: 75
+			// panah bawah: 80
+			// panah kanan: 77
 			char key = _getch();
 			if (key == 27) break;
 			if (key == 72) heroDir = 'U';
